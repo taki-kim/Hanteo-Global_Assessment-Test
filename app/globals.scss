@@ -1,5 +1,5 @@
-@import "../styles/reset.css";
-@import "../styles/theme.css";
+@import "../styles/reset";
+@import "../styles/theme";
 
 html {
   display: flex;
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  width: 640px;
+  width: $breakpoint;
 
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@ body {
   box-shadow: var(--box-shadow);
 }
 
-@media (max-width: 640px) {
+@media (max-width: $breakpoint) {
   body {
     width: 100%;
   }
