@@ -1,0 +1,36 @@
+:root {
+  --transition-duration: 0.1s;
+  --transition-timing: ease-in-out;
+
+  --primary-color: #ffffff;
+  --secondary-color: #f8f8f8;
+  --tertiary-color: #f1f1ef;
+
+  --text-color: black;
+  --text-color-2: #868484;
+
+  --font-xl: 1.8rem;
+  --font-l: 1.4rem;
+  --font-ml: 1.3rem;
+  --font-m: 1.1rem;
+  --font-s: 1rem;
+  --font-xs: 0.9rem;
+
+  --font-w-xl: 700;
+  --font-w-l: 600;
+  --font-w-m: 500;
+  --font-w-s: 400;
+  --font-w-xs: 300;
+
+  --color-pink-01: #ffb0b2;
+  --color-pink-02: #fb5ba8;
+  --color-red: #e84e4e;
+  --color-green: #55d04a;
+  --color-orange: #fe9f00;
+  --color-gray: rgb(154, 156, 157);
+  --color-link: rgb(7, 151, 198);
+
+  --transition-all: all 0.3s ease-in-out;
+
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.063), 0 1px 2px rgba(0, 0, 0, 0.131);
+}
