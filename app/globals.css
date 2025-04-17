@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  width: 768px;
+  width: 640px;
 
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@ body {
   box-shadow: var(--box-shadow);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   body {
     width: 100%;
   }

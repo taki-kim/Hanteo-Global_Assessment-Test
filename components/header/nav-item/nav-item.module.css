@@ -1,0 +1,12 @@
+.wrapper {
+  color: var(--font-color);
+  font-size: var(--font-m);
+  font-weight: var(--font-w-xl);
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.clicked {
+  color: var(--primary-color);
+}
