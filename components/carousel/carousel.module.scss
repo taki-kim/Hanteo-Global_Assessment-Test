@@ -9,12 +9,16 @@
   background-color: var(--tertiary-color);
 
   border-bottom: 1px solid black;
+
+  display: flex;
+  justify-content: center;
 }
 
 .slides {
   display: flex;
+  align-self: center;
 
-  width: 100%;
+  width: 80%;
   touch-action: pan-y;
   user-select: none;
   -webkit-user-drag: none;
