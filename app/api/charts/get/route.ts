@@ -14,7 +14,7 @@ export async function GET(req: Request) {
     const db = client.db(process.env.DB_NAME);
     const collection = db.collection("charts");
 
-    const query: Record<string, any> = {};
+    const query: Record<string, unknown> = {};
 
     const data = await collection
       .find(query)
