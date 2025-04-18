@@ -1,0 +1,50 @@
+.wrapper {
+  margin: 15px 0px;
+  height: 70px;
+
+  display: flex;
+
+  background-color: var(--secondary-color);
+
+  color: var(--font-color);
+
+  border-radius: 10px;
+
+  box-shadow: var(--box-shadow);
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--tertiary-color);
+  }
+}
+
+.image {
+  height: 100%;
+  aspect-ratio: 1/1;
+
+  border-radius: 10px;
+}
+
+.chart-number {
+  height: 100%;
+  aspect-ratio: 1/1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: var(--font-w-l);
+  font-size: var(--font-m);
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+
+  > :first-child {
+    font-weight: var(--font-w-l);
+  }
+}
