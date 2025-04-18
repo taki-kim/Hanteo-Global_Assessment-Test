@@ -1,4 +1,4 @@
-import styles from "./header.module.css";
+import styles from "./header.module.scss";
 
 import headerNavList from "@/lib/header-nav-list";
 import NavItem from "./nav-item/nav-item";
