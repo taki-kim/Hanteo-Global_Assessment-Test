@@ -14,16 +14,17 @@
     "next": "15.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-spinner": "^0.2.7",
     "sass": "^1.86.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@tanstack/react-query-devtools": "^5.74.4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.0",
-    "typescript": "^5",
-    "@tanstack/react-query-devtools": "^5.74.4"
+    "typescript": "^5"
   }
 }
