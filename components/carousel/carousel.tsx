@@ -121,7 +121,7 @@ export default function Carousel() {
       onMouseDown={onTouchStart}
       onMouseMove={(e) => e.buttons === 1 && onTouchMove(e)}
       onMouseUp={onTouchEnd}
-      onMouseLeave={(ㄷ) => {
+      onMouseLeave={() => {
         if (startX.current !== null) onTouchEnd();
       }}
       onTouchStart={onTouchStart}
