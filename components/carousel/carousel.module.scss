@@ -6,8 +6,6 @@
 
   padding: 1rem 0rem;
 
-  background-color: var(--tertiary-color);
-
   border-bottom: 1px solid black;
 
   display: flex;
@@ -18,7 +16,7 @@
   display: flex;
   align-self: center;
 
-  width: 80%;
+  width: 90%;
   touch-action: pan-y;
   user-select: none;
   -webkit-user-drag: none;
