@@ -8,15 +8,18 @@
   --secondary-color: #f8f8f8;
   --tertiary-color: #f1f1ef;
 
+  --border-radius-01: 5px;
+  --border-radius-02: 8px;
+  --border-radius-03: 12px;
+
   --font-color: black;
   --font-color-2: #868484;
 
   --font-xl: 1.8rem;
-  --font-l: 1.4rem;
-  --font-ml: 1.3rem;
-  --font-m: 1.1rem;
-  --font-s: 1rem;
-  --font-xs: 0.9rem;
+  --font-l: 1.1rem;
+  --font-m: 1rem;
+  --font-s: 0.8rem;
+  --font-xs: 0.6rem;
 
   --font-w-xl: 700;
   --font-w-l: 600;
@@ -27,9 +30,11 @@
   --color-pink-01: #ffb0b2;
   --color-pink-02: #fb5ba8;
   --color-red: #e84e4e;
+  --color-white: white;
+  --color-black: black;
   --color-green: #55d04a;
   --color-orange: #fe9f00;
-  --color-gray: rgb(154, 156, 157);
+  --color-grey: rgb(195, 197, 197);
   --color-link: rgb(7, 151, 198);
 
   --transition-all: all 0.3s ease-in-out;

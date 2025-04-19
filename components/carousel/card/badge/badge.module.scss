@@ -1,0 +1,14 @@
+.wrapper {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  padding: 5px;
+  border-radius: var(--border-radius-01);
+
+  background-color: var(--color-pink-02);
+
+  color: var(--color-white);
+  font-size: var(--font-s);
+  font-weight: var(--font-w-l);
+}
