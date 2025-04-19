@@ -45,18 +45,19 @@ export default function Carousel() {
     }, 150);
   };
 
-  const next = () => moveTo(currentIndex + 1);
-  const prev = () => moveTo(currentIndex - 1);
+  const next = () => moveTo((currentIndex + 1) % extendendList.length);
+  const prev = () => moveTo((currentIndex - 1) % extendendList.length);
 
   const startAutoSlide = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     timeoutRef.current = setTimeout(() => {
       next();
-    }, 3000);
+    }, 4000);
   };
 
   useEffect(() => {
     startAutoSlide();
+    console.log(currentIndex);
     return () => {
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
     };
@@ -75,19 +76,6 @@ export default function Carousel() {
       wrapper.removeEventListener("transitionend", handleTransitionEnd);
     };
   }, [currentIndex]);
-
-  useEffect(() => {
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === "visible") {
-        setCurrentIndex(1); // key를 바꿔서 리렌더링 유도
-      }
-    };
-
-    document.addEventListener("visibilitychange", handleVisibilityChange);
-    return () => {
-      document.removeEventListener("visibilitychange", handleVisibilityChange);
-    };
-  }, []);
 
   const onTouchStart = (e: React.TouchEvent | React.MouseEvent) => {
     if (isTransitioning) return;
