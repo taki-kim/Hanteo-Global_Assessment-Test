@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./carousel.module.scss";
 import Card from "./card/card";
 import { bannerList } from "@/lib/dummyList";
+import DotsIndicator from "./dots-indicator/dots-indicator";
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(1);
@@ -74,6 +75,19 @@ export default function Carousel() {
       wrapper.removeEventListener("transitionend", handleTransitionEnd);
     };
   }, [currentIndex]);
+
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "visible") {
+        setCurrentIndex(1); // key를 바꿔서 리렌더링 유도
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, []);
 
   const onTouchStart = (e: React.TouchEvent | React.MouseEvent) => {
     if (isTransitioning) return;
@@ -149,6 +163,11 @@ export default function Carousel() {
           />
         ))}
       </div>
+      <DotsIndicator
+        slidesNumber={listLength}
+        currentIndex={currentIndex}
+        setCurrentIndex={setCurrentIndex}
+      />
     </div>
   );
 }

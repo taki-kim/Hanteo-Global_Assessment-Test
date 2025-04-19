@@ -1,0 +1,30 @@
+.wrapper {
+  width: 100%;
+
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background-color: var(--color-grey);
+
+  transition: all 0.2s ease;
+
+  cursor: pointer;
+
+  &.active {
+    background-color: var(--color-pink-02);
+
+    width: 12px;
+    border-radius: var(--border-radius-02);
+  }
+}

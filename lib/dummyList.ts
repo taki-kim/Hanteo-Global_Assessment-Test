@@ -23,4 +23,20 @@ export const bannerList = [
     link: "https://www.google.com",
     status: "진행 예정",
   },
+  {
+    imageLink:
+      "https://resource.hanteochart.io/asset/chart/mainbanner/main_banner_1_ko.webp",
+    title: "세계 유일의 실시간 음악차트, 한터차트",
+    period: "2025. 05. 12 - 2025. 05. 13",
+    link: "https://www.hanteochart.com/",
+    status: "진행 중",
+  },
+  {
+    imageLink:
+      "https://awards.hanteo.com/_next/static/media/img_home_artdesign_2024_ko.e07529e7.png",
+    title: "한터 뮤직 어워드",
+    period: "2025. 05. 12 - 2025. 05. 13",
+    link: "https://awards.hanteo.com/?l=ko&m=false",
+    status: "진행 중",
+  },
 ];
