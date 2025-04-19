@@ -11,17 +11,16 @@
 
   cursor: pointer;
 
-  /* size modifiers */
   &.small {
-    font-size: var(--font-xs); /* 12px */
+    font-size: var(--font-xs);
     padding: 4px 10px;
   }
   &.medium {
-    font-size: var(--font-s); /* 14px */
+    font-size: var(--font-s);
     padding: 4px 12px;
   }
   &.large {
-    font-size: var(--font-m); /* 16px */
+    font-size: var(--font-m);
     padding: 6px 16px;
   }
 }
