@@ -5,7 +5,7 @@ import NavItem from "./nav-item/nav-item";
 
 export default function Header() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles["wrapper"]}>
       {headerNavList.map((item) => (
         <NavItem
           title={item.title}
