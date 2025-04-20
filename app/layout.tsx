@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.scss";
 import Header from "@/components/header/header";
 import ReactQueryProvider from "@/providers/reaact-query-provider";
+import ThemeChangeButton from "@/components/theme-change-button/theme-change-button";
+import ScriptTheme from "@/helper/ScriptTheme";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,11 +20,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ReactQueryProvider>
-          <Header />
-          {children}
-        </ReactQueryProvider>
+      <body className={`${inter.className}`} suppressHydrationWarning>
+        <ScriptTheme />
+        <div className={"body-content-wrapper"}>
+          <ReactQueryProvider>
+            <Header />
+            {children}
+            <ThemeChangeButton />
+          </ReactQueryProvider>
+        </div>
       </body>
     </html>
   );
