@@ -1,7 +1,7 @@
 @import "../styles/reset";
 @import "../styles/theme";
 
-html {
+body {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,7 +9,9 @@ html {
   background-color: var(--secondary-color);
 }
 
-body {
+.body-content-wrapper {
+  position: relative;
+
   width: $breakpoint;
 
   display: flex;
@@ -18,11 +20,13 @@ body {
 
   background-color: var(--primary-color);
 
+  color: var(--font-color);
+
   box-shadow: var(--box-shadow);
 }
 
 @media (max-width: $breakpoint) {
-  body {
+  .body-content-wrapper {
     width: 100%;
   }
 }

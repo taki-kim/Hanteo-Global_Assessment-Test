@@ -1,7 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
 
-import styles from "./nav-item.module.css";
+import styles from "./nav-item.module.scss";
 import Link from "next/link";
 
 type NavItemProps = {
