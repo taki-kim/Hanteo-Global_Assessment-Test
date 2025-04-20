@@ -12,7 +12,8 @@ body {
 .body-content-wrapper {
   position: relative;
 
-  width: $breakpoint;
+  width: $width-default;
+  min-height: 100vh;
 
   display: flex;
   flex-direction: column;
@@ -25,7 +26,7 @@ body {
   box-shadow: var(--box-shadow);
 }
 
-@media (max-width: $breakpoint) {
+@media (max-width: $width-default) {
   .body-content-wrapper {
     width: 100%;
   }
