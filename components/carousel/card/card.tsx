@@ -6,9 +6,9 @@ import LinkButton from "@/components/commons/link-button/link-button";
 type CardProps = {
   imageLink: string;
   title: string;
-  period: string;
+  period?: string;
   link: string;
-  status: string;
+  status?: string;
 };
 
 export default function Card({
@@ -31,7 +31,7 @@ export default function Card({
             <LinkButton buttonSize="medium" buttonText="바로가기" link={link} />
           </div>
           <div className={styles["info-footer"]}>
-            <p>{period}</p>
+            <p>{period ? period : ""}</p>
           </div>
         </div>
       </div>

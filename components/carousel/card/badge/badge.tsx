@@ -1,9 +1,10 @@
 import styles from "./badge.module.scss";
 
 type BadgeProps = {
-  statusText: string;
+  statusText?: string;
 };
 
 export default function Badge({ statusText }: BadgeProps) {
-  return <div className={styles["wrapper"]}>{statusText}</div>;
+  if (statusText) return <div className={styles["wrapper"]}>{statusText}</div>;
+  else return;
 }
