@@ -6,10 +6,9 @@ import { getTitleString } from "@/utils/urlString";
 export default async function SlugPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-
   return (
     <div className={styles["wrapper"]}>
       <TitleHeader urlParams={slug} />
