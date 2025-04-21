@@ -1,0 +1,15 @@
+.wrapper {
+  padding: var(--padding-l) 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.notice {
+  padding: var(--padding-s);
+
+  strong {
+    font-weight: var(--font-w-xl);
+  }
+}
