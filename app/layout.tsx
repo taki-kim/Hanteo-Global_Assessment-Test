@@ -5,6 +5,7 @@ import Header from "@/components/header/header";
 import ReactQueryProvider from "@/providers/reaact-query-provider";
 import ThemeChangeButton from "@/components/theme-change-button/theme-change-button";
 import ScriptTheme from "@/helper/ScriptTheme";
+import Footer from "@/components/footer/footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,6 +27,7 @@ export default function RootLayout({
           <ReactQueryProvider>
             <Header />
             {children}
+            <Footer />
             <ThemeChangeButton />
           </ReactQueryProvider>
         </div>

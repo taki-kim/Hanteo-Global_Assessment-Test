@@ -4,11 +4,15 @@
   --transition-duration: 0.1s;
   --transition-timing: ease-in-out;
 
+  --padding-s: 1rem;
+  --padding-m: 1.2rem;
+  --padding-l: 1.4rem;
+
   --border-radius-01: 5px;
   --border-radius-02: 8px;
   --border-radius-03: 12px;
 
-  --font-xl: 1.8rem;
+  --font-xl: 1.6rem;
   --font-l: 1.1rem;
   --font-m: 1rem;
   --font-s: 0.8rem;
@@ -27,7 +31,7 @@
   --color-black: black;
   --color-green: #55d04a;
   --color-orange: #fe9f00;
-  --color-grey: rgb(195, 197, 197);
+  --color-grey: rgb(209, 215, 215);
   --color-link: rgb(7, 151, 198);
 
   --transition-all: all 0.3s ease-in-out;
@@ -35,11 +39,11 @@
   .light {
     --primary-color: #ffffff;
     --secondary-color: #f8f8f8;
-    --tertiary-color: #f1f1ef;
+    --tertiary-color: #f1f1f1;
 
     --primary-color-r: #242530;
     --secondary-color-r: #2e3442;
-    --tertiary-color-r: #4c576b;
+    --tertiary-color-r: #394150;
 
     --font-color: black;
     --font-color-2: #868484;
@@ -51,11 +55,11 @@
   .dark {
     --primary-color: #242530;
     --secondary-color: #2e3442;
-    --tertiary-color: #4c576b;
+    --tertiary-color: #394150;
 
     --primary-color-r: #ffffff;
     --secondary-color-r: #f8f8f8;
-    --tertiary-color-r: #f1f1ef;
+    --tertiary-color-r: #f1f1f1;
 
     --font-color: #eeeeee;
     --font-color-2: #dddddd;

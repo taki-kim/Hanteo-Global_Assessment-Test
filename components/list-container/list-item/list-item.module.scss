@@ -1,6 +1,8 @@
+@import "../../../styles/variables.scss";
+
 .wrapper {
   margin: 15px 0px;
-  height: 70px;
+  height: 4.8rem;
 
   display: flex;
 
@@ -16,6 +18,12 @@
 
   &:hover {
     background-color: var(--tertiary-color);
+  }
+}
+
+@media (max-width: $width-breakpoint-m) {
+  .wrapper {
+    height: 4.2rem;
   }
 }
 
@@ -42,9 +50,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
+  gap: 0.4rem;
 
-  > :first-child {
-    font-weight: var(--font-w-l);
+  font-weight: var(--font-w-l);
+
+  > :nth-child(2) {
+    color: var(--font-color-2);
+    font-size: var(--font-s);
   }
 }

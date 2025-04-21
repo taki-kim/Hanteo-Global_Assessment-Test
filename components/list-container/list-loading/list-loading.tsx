@@ -1,6 +1,6 @@
 import { PuffLoader } from "react-spinners";
 
-import styles from "./list-loading.module.css";
+import styles from "./list-loading.module.scss";
 
 export default function ListLoading() {
   return (

@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 .wrapper {
   overflow: hidden;
   position: relative;
@@ -14,9 +16,21 @@
   display: flex;
   align-self: center;
 
-  width: 90%;
+  width: 60%;
   touch-action: pan-y;
   user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
+}
+
+@media (min-width: $width-breakpoint-s) and (max-width: $width-breakpoint-m) {
+  .slides {
+    width: 80%;
+  }
+}
+
+@media (max-width: $width-breakpoint-s) {
+  .slides {
+    width: 90%;
+  }
 }
