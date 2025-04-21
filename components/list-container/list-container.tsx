@@ -39,7 +39,7 @@ export default function ListContainer() {
   }
 
   return (
-    <div className={styles["wrapper"]}>
+    <ul className={styles["wrapper"]}>
       {allPosts.map((e, i) => (
         <ListItem
           key={i + e.song}
@@ -50,6 +50,6 @@ export default function ListContainer() {
       ))}
       {isFetchingNextPage && <ListLoading />}
       <div ref={loadMoreRef} className={styles["loadMoreRef"]} />
-    </div>
+    </ul>
   );
 }
